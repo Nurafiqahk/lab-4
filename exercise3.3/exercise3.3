@@ -1,0 +1,22 @@
+//name: nurafiqah bini khosni
+//class: BITI S1G2
+//lab4.cpp :This is lab 4 /2 0ct/ ms 41
+//push to github
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float loan_amount, interest, years, total_payment;
+
+	cout << "Enter your loan amount(RM):\n ";
+	cin >> loan_amount;
+	cout << "Enter annual interest rate (%):\n ";
+	cin >> interest;
+	cout << "Enter the number of years:\n ";
+	cin >> years;
+
+	total_payment = ((loan_amount * (interest / 100) * years )+ loan_amount) / (12 * years);
+
+	cout << "Monthly payment for this loan is (RM): " << total_payment << endl;
+}
